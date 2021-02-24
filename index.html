@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            María Bravo Gómez
+        </title> 
+        <link rel="icon"  type="image/png" sizes="250x250" href="img/icon.png">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body id="index">
+         <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="plantilla.css" media="screen" />
+
+        <!--Javascript-->
+        <script src="function.js"></script>
+
+        <!--Header--> 
+        <header>
+          <div id="inline">
+            <div class="title">
+              <div id="titleSize">MARÍA BRAVO GÓMEZ<br></div>
+              Estudiante de Ingeniería Informática
+            </div>
+            <div class="title">
+              <img src="img/icon.png" width="150px" height="150px"><br>
+            </div>
+          </div>
+        </header>
+
+        <!--Main content-->
+        <!-- Slideshow container -->
+        <div clas="content">
+          <div class="slideshow-container">
+            <!-- Slide One -->
+            <div id="slide1" class="mySlides fade">
+              <h1>EDUCACIÓN Y EXPERIENCIA LABORAL</h1><br>
+              <div id="inlineCenter">
+                <div>
+                  <img src="img/university.png" width="150px" height="150px"><br>
+                  Estudiante del Grado de Ingeniería Informática <br>
+                  (2017 - Actualmente)<br><br>
+                </div>
+                <div><br>
+                  <img src="img/telefonica.jpg" width="250px" height="125px"><br>
+                  Auxiliar informático <br>
+                  (Septiembre 2020 - Octubre 2020)<br><br>
+                </div>
+              </div><br><br>
+            </div>
+            <!-- Slide Two -->
+            <div class="mySlides fade">
+              <h1>INFORMÁTICA</h1><br>
+              <div id="inlineWithOutSpace">
+                Java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="bars">
+                  <span style="width:75%;"><span id="java" class="progress"></span></span>
+                </div>
+              </div>
+              <div id="inlineWithOutSpace">
+                HTML &nbsp;&nbsp;
+                <div class="bars">
+                  <span style="width:75%;"><span id="html" class="progress"></span></span>
+                </div>
+              </div>
+              <div id="inlineWithOutSpace">
+                CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="bars">
+                  <span style="width:75%;"><span id="css" class="progress"></span></span>
+                </div>
+              </div>
+              <div id="inlineWithOutSpace">
+                JavaScript &nbsp;&nbsp;
+                <div class="bars">
+                  <span style="width:75%;"><span id="javascript" class="progress"></span></span>
+                </div>
+              </div>
+              <div id="inlineWithOutSpace">
+                Ofimática &nbsp;&nbsp;
+                <div class="bars">
+                  <span style="width:50%;"><span id="ofimatica" class="progress"></span></span>
+                </div>
+              </div>
+              <div id="inlineWithOutSpace">
+                Otros lenguajes &nbsp;&nbsp;
+                <img src="img/phyton.png" width="50px" height="50px">&nbsp;
+                <img src="img/docker.png" width="50px" height="50px">&nbsp;
+                <img src="img/scala.png" width="50px" height="50px">&nbsp;
+                <img src="img/c.png" width="50px" height="50px">&nbsp;
+                <img src="img/cPlus.png" width="50px" height="50px">&nbsp;
+              </div><br>
+            </div>
+            <!-- Slide Three -->
+            <div class="mySlides fade">
+              <h1>HABILIDADES</h1>
+              <div id="inlineCenter">
+                <div>
+                  <img src="img/teamWork.png" width="100px" height="100px"><br>
+                  Facilidad para trabajar <br>
+                  en equipo<br><br>
+                </div>
+                <div><br>
+                  <img src="img/organized.png" width="100px" height="75px"><br>
+                  Capacidad de organización y <br>
+                  planificación<br><br>
+                </div>
+                <div><br>
+                  <img src="img/clock.png" width="100px" height="90px"><br>
+                  Puntual y <br>
+                  responsable
+                </div>
+              </div>
+              <div id="inlineCenter">
+                <div>
+                  <img src="img/idea.png" width="100px" height="100px"><br>
+                  Capacidad de analisis y <br>
+                  de tomar decisiones<br><br>
+                </div>
+                <div><br>
+                  <img src="img/language.png" width="100px" height="85px"><br>
+                  Manejo con el inglés<br>
+                  (Escrito y oral)<br><br>
+                </div>
+              </div>
+            </div>
+            <!-- Slide Four -->
+            <div class="mySlides fade">
+              <h1>PERFIL PERSONAL</h1>
+              <div id="center">
+                <img src="img/photo.jpg" width="150px" height="200px"><br>
+                <div class="title">
+                  <br>
+                  Datos de contacto:<br><br>
+                  <div class="popup" onclick="popUp()">
+                    <img src="img/gmail.png" width="75px" height="75px">
+                    <span class="popuptext" id="myPopup">mariabravogomez21@gmail.com</span>
+                  </div>
+                  <a href="https://github.com/Mery-21"><img src="img/github.png" width="75px" height="75px"></a>
+                  <a href="https://www.linkedin.com/in/mar%C3%ADa-bravo-g%C3%B3mez-608ba8205/"><img src="img/linkedin.png" width="75px" height="75px"></a>
+                  <a href="https://Mery-21.github.io/folder/document.pdf"><img src="img/cv.png" width="75px" height="75px"></a>
+                </div>
+              </div><br><br>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      <br>
+      </div>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <!--Footer-->
+      <footer>
+          <p>Estudios y experiencia laboral | Informática | Habilidades | Perfil personal</p>
+          <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+      </footer>
+    </body>
+</html>

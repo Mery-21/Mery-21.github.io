@@ -1,0 +1,263 @@
+/*--------------------------------------------
+                   STRUCTURE
+--------------------------------------------*/
+body{
+  margin: 0;
+}
+
+#center{
+  text-align: center;
+  justify-content: center;
+}
+
+#inline{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: x-large;
+}
+
+#inlineCenter{
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: x-large;
+}
+
+#inlineLeft{
+  text-align: left;
+}
+
+#inlineWithOutSpace{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+/*--------------------------------------------
+                      FONT
+--------------------------------------------*/
+.title{
+  font-family: 'Lucida Handwriting', cursive;
+}
+
+h1{
+  color: #146376;
+  text-align: center; 
+  text-decoration: underline 5px #146376;
+}
+
+#titleSize{
+  font-size: 50px;
+}
+
+/*--------------------------------------------
+                   HEADER
+--------------------------------------------*/
+header{
+  padding: 2%;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  background-color: #1C88A3;
+  border-bottom:10px solid #146376;
+}
+/*--------------------------------------------
+                   CONTENT
+--------------------------------------------*/
+
+/*-------------------SLIDE------------------*/
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+  margin-top: 2%;
+}
+
+#slide1 {
+  display:block
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  justify-content: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*-------------------BARS------------------*/
+.bars { 
+  height: 15px;
+  width: 50%;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.bars span {
+  display: block;
+  height: 100%;
+}
+
+.progress {
+  animation: progressBar 2s ease-in-out;
+  animation-fill-mode:both; 
+}
+
+#java{
+  background-color: rgba(255, 0, 51, 0.5);
+}
+
+#html{
+  background-color: rgb(255, 68, 0, 0.5);
+}
+
+#css{
+  background-color: rgb(0, 153, 255, 0.5);
+}
+
+#javascript{
+  background-color: rgba(231, 227, 0, 0.5);
+}
+
+#ofimatica{
+  background-color: rgba(0, 63, 99, 0.5);
+}
+
+/*-------------------POP UP------------------*/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 350px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/*------------------------------------------
+                   FOOTER
+--------------------------------------------*/
+footer{
+  width: 100%; 
+  height: 8%;
+  bottom: 0%; 
+  background-color: #0B3641; 
+  color: #fff; 
+  position: fixed; 
+  padding-top:1%; 
+  padding-bottom:1%; 
+  text-align:center; 
+  font-weight:bold; 
+  border-top:10px solid #146376;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+/*------------------------------------------
+                   OTHERS
+--------------------------------------------*/
+/*-------------------SLIDE------------------*/
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*---------------PROGRESS BAR---------------*/
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/*-------------------POP UP------------------*/
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
