@@ -89,7 +89,7 @@ header{
   padding: 16px;
   color: black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 100px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -223,6 +223,7 @@ footer{
   text-align:center; 
   font-weight:bold; 
   border-top:10px solid #146376;
+  display: table;
 }
 
 a:link, a:visited, a:active {
@@ -261,3 +262,25 @@ a:link, a:visited, a:active {
   to {opacity:1 ;}
 }
 
+/*-------------------MEDIA------------------*/
+@media (max-width: 768px) {
+  #titleSize{
+    font-size: 30px;
+  }
+
+  .h1{
+    font-size: 22px;
+  }
+  
+  .mySlides{
+    font-size: 12px;
+  }
+
+  .prev, .next {
+    font-size: 20px;
+  }
+
+  .inlineCenter{
+    display:none;
+  }
+}
