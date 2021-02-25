@@ -273,7 +273,11 @@ a:link, a:visited, a:active {
   }
   
   .mySlides{
-    font-size: 8px;
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 10px;
   }
 
   .prev, .next {
