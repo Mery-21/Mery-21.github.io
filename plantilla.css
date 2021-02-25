@@ -8,6 +8,7 @@ body{
 #center{
   text-align: center;
   justify-content: center;
+  font-size: x-large;
 }
 
 #inline{
@@ -223,7 +224,6 @@ footer{
   text-align:center; 
   font-weight:bold; 
   border-top:10px solid #146376;
-  display: table;
 }
 
 a:link, a:visited, a:active {
@@ -286,5 +286,25 @@ a:link, a:visited, a:active {
 
   .inlineCenter{
     display: grid;
+  }
+
+  #contact{
+    width: 50px;
+    height: 50px;
+  }
+
+  #photo{
+    width: 100px;
+    height: 150px;
+  }
+
+  #logoUni{
+    width: 100px;
+    height: 100px;
+  }
+
+  #logoWork{
+    width: 200px;
+    height: 75px;
   }
 }
