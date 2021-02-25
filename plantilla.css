@@ -281,6 +281,6 @@ a:link, a:visited, a:active {
   }
 
   .inlineCenter{
-    display:none;
+    display: grid;
   }
 }
