@@ -311,4 +311,9 @@ a:link, a:visited, a:active {
     width: 200px;
     height: 75px;
   }
+
+  #logoWork2{
+    width: 200px;
+    height: 100px;
+  }
 }
